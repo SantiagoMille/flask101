@@ -9,7 +9,7 @@ Workshop introducing how to use Flask for API development
 
 
 1. In your terminal/command prompt, navigate to the folder you would like to install the project files to. (ex.`cd path/to/folder/`) 
-2. Run the following: `git clone https://github.com/bbwong23/flask101.git`
+2. Run the following: `git clone https://github.com/santiagomille/flask101.git`
 
 
 ### 2. Python & Libraries
