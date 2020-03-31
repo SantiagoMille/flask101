@@ -29,7 +29,7 @@ app = Flask(__name__)
 # request type = JSON
 @app.route('/mean',methods=['GET'] )
 def mean():
-	user_input = request.get_json()['nums']
+	user_input = request.get_json()['input']
 	
 	results = calculator.mean(user_input)
 
@@ -40,7 +40,7 @@ def mean():
 # request type = Query
 @app.route('/median',methods=['GET','POST'] )
 def median():
-	user_input = request.args.get('nums')
+	user_input = request.args.get('input')
 
 	user_input = list(map(int, user_input.split(',')))
 	results = calculator.median(user_input)
@@ -51,7 +51,7 @@ def median():
 # request type = Form
 @app.route('/mode',methods=['POST'] )
 def mode():
-	user_input = request.form.get('nums')
+	user_input = request.form.get('input')
 
 	user_input = list(map(int, user_input))
 	results = calculator.mode(user_input)
